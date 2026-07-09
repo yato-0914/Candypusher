@@ -6,8 +6,9 @@ public class Createcandy : MonoBehaviour
     private int CandyCount = 0;
     public GameObject CandyPrefab;
     //GameObject‚Ì”z—ñ‚ğì¬
-    public GameObject[]CandyPrefabs;
+    public GameObject[] CandyPrefabs;
     private Vector3 startPosition;
+    public AudioManager audioManager;
 
      void Start()
     {
@@ -16,6 +17,7 @@ public class Createcandy : MonoBehaviour
     }
     void AddCandy()
     {
+        audioManager.SEPlay(1);
         CandyCount = CandyCount + 1;
         Debug.Log(CandyCount);
         // 0`CandyPrefabs‚Ì—v‘f-1‚Ü‚Å‚Ìƒ‰ƒ“ƒ_ƒ€‚È®”‚ğæ“¾

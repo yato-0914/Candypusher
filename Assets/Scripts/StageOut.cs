@@ -7,9 +7,12 @@ public class StageOut : MonoBehaviour
     private int Score = 0;
 
     public TextMeshProUGUI scoreText;
+    public AudioManager audioManager;
     //このコードをアタッチしたオブジェクトに他のオブジェクトがすり抜けたに呼ばれる
     void OnTriggerEnter(Collider other )
     {
+        audioManager.SEPlay(0);
+
         Score = Score + 1;
         scoreText.text = $"スコア:{Score}";
 
