@@ -11,9 +11,10 @@ public class StageOut : MonoBehaviour
     //このコードをアタッチしたオブジェクトに他のオブジェクトがすり抜けたに呼ばれる
     void OnTriggerEnter(Collider other )
     {
-        audioManager.SEPlay(0);
+        AudioManager.instance.SEPlay(1);
 
         Score = Score + 1;
+
         scoreText.text = $"スコア:{Score}";
 
 
@@ -24,5 +25,10 @@ public class StageOut : MonoBehaviour
 
         Destroy(other.gameObject);
 
+        if (Score == 10)
+        {
+            
+            AudioManager.instance.BGMPlay();
+        }
     }
 }

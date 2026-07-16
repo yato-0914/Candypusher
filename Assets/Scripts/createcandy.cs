@@ -17,7 +17,7 @@ public class Createcandy : MonoBehaviour
     }
     void AddCandy()
     {
-        audioManager.SEPlay(1);
+        AudioManager.instance.SEPlay(0);
         CandyCount = CandyCount + 1;
         Debug.Log(CandyCount);
         // 0`CandyPrefabs‚Ì—v‘f-1‚Ü‚Å‚Ìƒ‰ƒ“ƒ_ƒ€‚È®”‚ğæ“¾
