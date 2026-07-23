@@ -15,7 +15,7 @@ public class Createcandy : MonoBehaviour
         startPosition = this.transform.position;
         AddCandy();
     }
-    void AddCandy()
+    public void AddCandy()
     {
         AudioManager.instance.SEPlay(0);
         CandyCount = CandyCount + 1;

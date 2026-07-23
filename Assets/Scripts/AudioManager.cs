@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SEPlay(int i)
     {
-        if (audioSource == null);
+        if (audioSource == null)
         {
             audioSource= this.gameObject.AddComponent<AudioSource>();
         }
