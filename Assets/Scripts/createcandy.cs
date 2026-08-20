@@ -44,7 +44,7 @@ public class Createcandy : MonoBehaviour
             //型 変数 = 初期値(Instantlateで作られたオブジェクト)
              GameObject createPrefab = Instantiate(CandyPrefabs[candyType]);
         // positionを自身(コードアタッチされているオブジェクト)と同じにする
-        CandyPrefab.transform.position = this.transform.position;
+       createPrefab.transform.position = this.transform.position;
     }
      // Update is called once per frame
     void Update()
