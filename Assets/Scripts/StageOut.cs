@@ -4,7 +4,7 @@ using UnityEngine;
 public class StageOut : MonoBehaviour
 {
     //アクセス修飾子 型と変数
-    private int Score = 0;
+    public int Score = 0;
 
     public TextMeshProUGUI scoreText;
     public AudioManager audioManager;

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Deviceinput : MonoBehaviour
 {
-    private InputAction createCandyAction;
+    public InputAction createCandyAction;
     private InputAction inputVector2Action;
     public Createcandy createCandy;
 
@@ -20,7 +20,7 @@ public class Deviceinput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(inputVector2Action.ReadValue<Vector2>());
+        //Debug.Log(inputVector2Action.ReadValue<Vector2>());
 
         //‚à‚µ‚àcreateCandyAction‚É“o˜^‚³‚ê‚Ä‚¢‚éƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚ç
         if (createCandyAction.WasPressedThisFrame())
