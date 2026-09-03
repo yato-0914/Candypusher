@@ -1,4 +1,4 @@
-using UnityEditor.Rendering;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,7 +6,7 @@ public class Deviceinput : MonoBehaviour
 {
     public InputAction createCandyAction;
     private InputAction inputVector2Action;
-    public Createcandy createCandy;
+    public Createcandy wasPressedThisFram;
 
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,7 +25,7 @@ public class Deviceinput : MonoBehaviour
         //‚à‚µ‚àcreateCandyAction‚É“o˜^‚³‚ê‚Ä‚¢‚éƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚ç
         if (createCandyAction.WasPressedThisFrame())
         {
-            createCandy.AddCandy();
+            wasPressedThisFram.AddCandy();
         }
         
     }

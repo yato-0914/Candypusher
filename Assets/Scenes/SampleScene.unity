@@ -449,6 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameSystem
   stageout: {fileID: 1116194926}
   deviceinput: {fileID: 1874356644}
+  StageOut: {fileID: 1116194921}
 --- !u!4 &196301952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 461899536930419386, guid: a20acf82db95fbf4e97490e99a97d145, type: 3}
@@ -2406,7 +2407,7 @@ GameObject:
   - component: {fileID: 1116194922}
   - component: {fileID: 1116194926}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: StageOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9599,7 +9600,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  createCandy: {fileID: 1874356643}
+  wasPressedThisFram: {fileID: 0}
 --- !u!4 &1905015363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 461899536930419386, guid: a20acf82db95fbf4e97490e99a97d145, type: 3}
